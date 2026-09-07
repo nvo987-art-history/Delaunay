@@ -1,0 +1,1564 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta
+    name="description"
+    content="Color as a Generative Principle in the Work of Sonia Delaunay — Art Historical Research by Nicholas Van-Orton."
+  >
+
+  <title>
+    Color as a Generative Principle in the Work of Sonia Delaunay
+  </title>
+
+  <!-- Elegant typography -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <style>
+    :root {
+      --background: #f2eee6;
+      --surface: #faf8f3;
+      --surface-dark: #1b1f22;
+      --surface-dark-2: #252a2e;
+
+      --text: #24282b;
+      --text-soft: #646b70;
+      --text-light: #f4efe6;
+      --text-light-soft: rgba(244, 239, 230, 0.66);
+
+      --accent: #a98252;
+      --accent-light: #d8c4a4;
+
+      --border: rgba(36, 40, 43, 0.13);
+      --border-light: rgba(255, 255, 255, 0.12);
+
+      --container: 1180px;
+
+      --shadow:
+        0 30px 80px rgba(31, 34, 36, 0.07);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      background: var(--background);
+      color: var(--text);
+
+      font-family:
+        "Inter",
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        sans-serif;
+
+      line-height: 1.8;
+      -webkit-font-smoothing: antialiased;
+      text-rendering: optimizeLegibility;
+    }
+
+    ::selection {
+      background: var(--accent);
+      color: #fff;
+    }
+
+    a {
+      color: inherit;
+    }
+
+    img {
+      max-width: 100%;
+      display: block;
+    }
+
+    /* =========================================
+       HERO
+       ========================================= */
+
+    .hero {
+      position: relative;
+      min-height: 78vh;
+
+      display: flex;
+      align-items: center;
+
+      overflow: hidden;
+
+      background:
+        radial-gradient(
+          circle at 82% 18%,
+          rgba(169, 130, 82, 0.27),
+          transparent 27%
+        ),
+        radial-gradient(
+          circle at 70% 85%,
+          rgba(255, 255, 255, 0.035),
+          transparent 25%
+        ),
+        linear-gradient(
+          135deg,
+          #181c1f 0%,
+          #292e32 52%,
+          #16191b 100%
+        );
+
+      color: var(--text-light);
+    }
+
+    .hero::before {
+      content: "";
+
+      position: absolute;
+
+      width: 720px;
+      height: 720px;
+
+      right: -270px;
+      top: -350px;
+
+      border: 1px solid rgba(216, 196, 164, 0.2);
+      border-radius: 50%;
+    }
+
+    .hero::after {
+      content: "";
+
+      position: absolute;
+
+      width: 470px;
+      height: 470px;
+
+      right: 90px;
+      bottom: -390px;
+
+      border: 1px solid rgba(216, 196, 164, 0.14);
+      border-radius: 50%;
+    }
+
+    .hero-inner {
+      position: relative;
+      z-index: 2;
+
+      width: min(
+        var(--container),
+        calc(100% - 48px)
+      );
+
+      margin: 0 auto;
+
+      padding: 110px 0;
+    }
+
+    .eyebrow {
+      margin-bottom: 28px;
+
+      color: var(--accent-light);
+
+      font-size: 0.72rem;
+      font-weight: 700;
+
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+    }
+
+    .hero h1 {
+      max-width: 1050px;
+
+      margin: 0 0 34px;
+
+      font-family:
+        "Playfair Display",
+        Georgia,
+        serif;
+
+      font-size: clamp(
+        3.2rem,
+        8vw,
+        7.2rem
+      );
+
+      font-weight: 600;
+      line-height: 1.02;
+
+      letter-spacing: -0.045em;
+    }
+
+    .hero-description {
+      max-width: 750px;
+
+      margin: 0;
+
+      color: var(--text-light-soft);
+
+      font-size: clamp(
+        1rem,
+        1.5vw,
+        1.18rem
+      );
+
+      line-height: 1.8;
+    }
+
+    .author-line {
+      display: flex;
+      flex-wrap: wrap;
+
+      gap: 10px 28px;
+
+      margin-top: 48px;
+      padding-top: 23px;
+
+      border-top:
+        1px solid
+        rgba(255, 255, 255, 0.15);
+
+      color:
+        rgba(244, 239, 230, 0.6);
+
+      font-size: 0.84rem;
+    }
+
+    /* =========================================
+       NAVIGATION
+       ========================================= */
+
+    .navigation {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+
+      background:
+        rgba(242, 238, 230, 0.9);
+
+      border-bottom:
+        1px solid
+        var(--border);
+
+      backdrop-filter: blur(18px);
+      -webkit-backdrop-filter: blur(18px);
+    }
+
+    .navigation-inner {
+      width: min(
+        var(--container),
+        calc(100% - 48px)
+      );
+
+      margin: 0 auto;
+    }
+
+    .navigation-list {
+      display: flex;
+
+      gap: 28px;
+
+      overflow-x: auto;
+
+      padding: 15px 0;
+
+      scrollbar-width: none;
+    }
+
+    .navigation-list::-webkit-scrollbar {
+      display: none;
+    }
+
+    .navigation a {
+      flex: 0 0 auto;
+
+      color: var(--text-soft);
+
+      text-decoration: none;
+
+      font-size: 0.7rem;
+      font-weight: 700;
+
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+
+      transition:
+        color 0.25s ease;
+    }
+
+    .navigation a:hover {
+      color: var(--accent);
+    }
+
+    /* =========================================
+       MAIN
+       ========================================= */
+
+    main {
+      width: min(
+        var(--container),
+        calc(100% - 48px)
+      );
+
+      margin: 0 auto;
+
+      padding: 90px 0 120px;
+    }
+
+    .research-section {
+      scroll-margin-top: 90px;
+
+      margin-bottom: 110px;
+    }
+
+    .section-header {
+      display: grid;
+
+      grid-template-columns:
+        minmax(170px, 0.32fr)
+        minmax(0, 1fr);
+
+      gap: 55px;
+
+      margin-bottom: 45px;
+    }
+
+    .section-number {
+      padding-top: 8px;
+
+      color: var(--accent);
+
+      font-size: 0.7rem;
+      font-weight: 700;
+
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+    }
+
+    .section-title {
+      margin: 0;
+
+      font-family:
+        "Playfair Display",
+        Georgia,
+        serif;
+
+      font-size: clamp(
+        2.3rem,
+        4vw,
+        4rem
+      );
+
+      font-weight: 600;
+
+      line-height: 1.1;
+
+      letter-spacing: -0.035em;
+    }
+
+    .content {
+      max-width: 850px;
+      margin-left: auto;
+    }
+
+    .content p {
+      margin:
+        0 0 27px;
+
+      color: #363b3f;
+
+      font-size: 1rem;
+      line-height: 1.9;
+    }
+
+    .content p:last-child {
+      margin-bottom: 0;
+    }
+
+    .subsection-title {
+      margin:
+        58px 0 20px;
+
+      font-family:
+        "Playfair Display",
+        Georgia,
+        serif;
+
+      font-size:
+        clamp(
+          1.45rem,
+          2.3vw,
+          2rem
+        );
+
+      line-height: 1.25;
+
+      font-weight: 600;
+
+      letter-spacing: -0.02em;
+    }
+
+    .content p:first-child::first-letter {
+      float: left;
+
+      margin:
+        8px 10px 0 0;
+
+      color: var(--accent);
+
+      font-family:
+        "Playfair Display",
+        Georgia,
+        serif;
+
+      font-size: 4.6rem;
+
+      line-height: 0.72;
+    }
+
+    .highlight {
+      margin: 50px 0;
+
+      padding:
+        34px 38px;
+
+      background:
+        var(--surface);
+
+      border:
+        1px solid
+        var(--border);
+
+      border-left:
+        3px solid
+        var(--accent);
+
+      box-shadow: var(--shadow);
+    }
+
+    .highlight p {
+      margin: 0;
+
+      font-family:
+        "Playfair Display",
+        Georgia,
+        serif;
+
+      font-size: 1.15rem;
+
+      line-height: 1.65;
+    }
+
+    /* =========================================
+       FOOTER
+       ========================================= */
+
+    footer {
+      background:
+        linear-gradient(
+          135deg,
+          var(--surface-dark),
+          var(--surface-dark-2)
+        );
+
+      color: var(--text-light);
+
+      padding:
+        90px 0 35px;
+    }
+
+    .footer-container {
+      width: min(
+        var(--container),
+        calc(100% - 48px)
+      );
+
+      margin: 0 auto;
+    }
+
+    .footer-grid {
+      display: grid;
+
+      grid-template-columns:
+        minmax(0, 1.15fr)
+        minmax(320px, 0.85fr);
+
+      gap: 80px;
+    }
+
+    .footer-eyebrow {
+      margin-bottom: 24px;
+
+      color: var(--accent-light);
+
+      font-size: 0.7rem;
+      font-weight: 700;
+
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+    }
+
+    .footer-title {
+      max-width: 680px;
+
+      margin: 0;
+
+      font-family:
+        "Playfair Display",
+        Georgia,
+        serif;
+
+      font-size:
+        clamp(
+          2.3rem,
+          4vw,
+          4.2rem
+        );
+
+      line-height: 1.1;
+
+      font-weight: 600;
+
+      letter-spacing: -0.035em;
+    }
+
+    .footer-description {
+      max-width: 600px;
+
+      margin-top: 28px;
+
+      color:
+        var(--text-light-soft);
+
+      font-size: 0.95rem;
+    }
+
+    .contact-label {
+      color: var(--accent-light);
+
+      font-size: 0.68rem;
+      font-weight: 700;
+
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+    }
+
+    .contact-list {
+      margin-top: 22px;
+    }
+
+    .contact-link {
+      display: flex;
+
+      align-items: center;
+      justify-content: space-between;
+
+      gap: 20px;
+
+      padding: 18px 0;
+
+      border-bottom:
+        1px solid
+        var(--border-light);
+
+      color:
+        var(--text-light);
+
+      text-decoration: none;
+
+      transition:
+        color 0.25s ease,
+        padding-left 0.25s ease;
+    }
+
+    .contact-link:hover {
+      padding-left: 7px;
+
+      color:
+        var(--accent-light);
+    }
+
+    .contact-main {
+      min-width: 0;
+
+      overflow-wrap: anywhere;
+
+      font-size: 0.92rem;
+    }
+
+    .contact-type {
+      flex: 0 0 auto;
+
+      color:
+        rgba(244, 239, 230, 0.38);
+
+      font-family:
+        ui-monospace,
+        SFMono-Regular,
+        Menlo,
+        Monaco,
+        Consolas,
+        monospace;
+
+      font-size: 0.65rem;
+
+      letter-spacing: 0.05em;
+    }
+
+    .did {
+      display: inline-flex;
+
+      max-width: 100%;
+
+      padding:
+        8px 11px;
+
+      border:
+        1px solid
+        rgba(169, 130, 82, 0.38);
+
+      color:
+        var(--accent-light);
+
+      font-family:
+        ui-monospace,
+        SFMono-Regular,
+        Menlo,
+        Monaco,
+        Consolas,
+        monospace;
+
+      font-size: 0.78rem;
+
+      overflow-wrap: anywhere;
+    }
+
+    .footer-bottom {
+      display: flex;
+
+      justify-content: space-between;
+
+      gap: 20px;
+
+      margin-top: 75px;
+      padding-top: 24px;
+
+      border-top:
+        1px solid
+        var(--border-light);
+
+      color:
+        rgba(244, 239, 230, 0.4);
+
+      font-size: 0.72rem;
+    }
+
+    /* =========================================
+       RESPONSIVE
+       ========================================= */
+
+    @media (max-width: 800px) {
+
+      .hero {
+        min-height: 72vh;
+      }
+
+      .hero-inner {
+        padding:
+          80px 0;
+      }
+
+      main {
+        padding:
+          65px 0 85px;
+      }
+
+      .section-header {
+        display: block;
+      }
+
+      .section-number {
+        margin-bottom: 15px;
+      }
+
+      .research-section {
+        margin-bottom: 75px;
+      }
+
+      .footer-grid {
+        grid-template-columns: 1fr;
+
+        gap: 50px;
+      }
+    }
+
+    @media (max-width: 600px) {
+
+      .hero-inner,
+      .navigation-inner,
+      main,
+      .footer-container {
+        width:
+          calc(100% - 30px);
+      }
+
+      .hero h1 {
+        font-size:
+          clamp(
+            2.8rem,
+            14vw,
+            4.5rem
+          );
+      }
+
+      .hero-description {
+        font-size: 0.94rem;
+      }
+
+      .author-line {
+        flex-direction: column;
+        gap: 7px;
+      }
+
+      .navigation-list {
+        gap: 20px;
+      }
+
+      .section-title {
+        font-size: 2.25rem;
+      }
+
+      .content p {
+        font-size: 0.95rem;
+      }
+
+      .highlight {
+        padding:
+          25px 23px;
+      }
+
+      .footer-grid {
+        display: block;
+      }
+
+      .footer-title {
+        font-size: 2.45rem;
+      }
+
+      .contact-link {
+        align-items: flex-start;
+      }
+
+      .contact-type {
+        display: none;
+      }
+
+      .footer-bottom {
+        display: block;
+      }
+
+      .footer-bottom div + div {
+        margin-top: 8px;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+
+      html {
+        scroll-behavior: auto;
+      }
+
+      *,
+      *::before,
+      *::after {
+        transition: none !important;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- =========================================
+       HERO
+       ========================================= -->
+
+  <header class="hero">
+
+    <div class="hero-inner">
+
+      <div class="eyebrow">
+        Art Historical Research
+      </div>
+
+      <h1>
+        Color as a Generative Principle in the Work of Sonia Delaunay
+      </h1>
+
+      <p class="hero-description">
+        Research Summary
+      </p>
+
+      <div class="author-line">
+        <span>
+          Nicholas Van-Orton
+        </span>
+
+        <span>
+          ORCID: 0009-0007-4628-1871
+        </span>
+      </div>
+
+    </div>
+
+  </header>
+
+
+  <!-- =========================================
+       NAVIGATION
+       ========================================= -->
+
+  <nav
+    class="navigation"
+    aria-label="Research navigation"
+  >
+
+    <div class="navigation-inner">
+
+      <div class="navigation-list">
+
+        <a href="#introduction">
+          Framework
+        </a>
+
+        <a href="#methodology">
+          Methodology
+        </a>
+
+        <a href="#findings">
+          Findings
+        </a>
+
+        <a href="#concept">
+          Concept
+        </a>
+
+        <a href="#conclusion">
+          Conclusion
+        </a>
+
+        <a href="#further-research">
+          Further Research
+        </a>
+
+      </div>
+
+    </div>
+
+  </nav>
+
+
+  <!-- =========================================
+       MAIN RESEARCH
+       ========================================= -->
+
+  <main>
+
+
+    <!-- =======================================
+         INTRODUCTION
+         ======================================= -->
+
+    <section
+      class="research-section"
+      id="introduction"
+    >
+
+      <div class="section-header">
+
+        <div class="section-number">
+          Research Chapter 01
+        </div>
+
+        <h2 class="section-title">
+          Introduction and Research Framework
+        </h2>
+
+      </div>
+
+
+      <div class="content">
+
+        <p>
+          The history of colour in visual culture cannot be reduced to the problem of filling pre-given forms. According to the fundamental thesis of the research, colour is a structuring and meaning-producing factor capable of creating the visual structure itself. Examining the oeuvre of Sonia Delaunay from this perspective becomes particularly significant because, in her art, colour does not appear as a secondary formal property, but as an autonomous, relational and generative operation. The research interprets this operation within the history of modernism, while at the same time placing it in a theoretical context that extends beyond it: colour does not simply ‘exist’ in the image, but, as a process arising from the relations of colours to one another, organises the image, space, rhythm and the temporality of perception.
+        </p>
+
+        <p>
+          The point of departure of the research is the reconfiguration of the historical ontology of colour. With his work Opticks, published in 1704, Isaac Newton placed colour in a new scientific context as an investigable phenomenon of the physical structure of light. The prism experiment demonstrated that white light is not a homogeneous unity, but a system of components of different refrangibility. The prism does not create colours, but separates components already present in light. In this way, the concept of colour became partly detached from the traditional conception of objects as possessing properties and entered scientific thought as a measurable, repeatable natural phenomenon.
+        </p>
+
+        <p>
+          The objectifying perspective opened up by Newton, however, did not exhaust the problem of colour. Johann Wolfgang von Goethe’s investigations in Zur Farbenlehre of 1810 brought the subjective and physiological conditions of the experience of colour to the foreground. According to the emphasis of the research document, for Goethe the experience of colour is not merely an external physical phenomenon, but an experience also connected to the physiological and subjective operation of vision. The phenomenon of the afterimage is particularly important: after prolonged exposure to an intense colour, vision generates a complementary colour. The eye, therefore, does not simply register, but participates, through its own operation, in the creation of the experience of colour. Colour consequently becomes a psychophysical event that arises in the interaction of the body, perception and the external world.
+        </p>
+
+        <p>
+          A decisive stage in this transformation of thought is constituted by the work of Michel Eugène Chevreul. Through his practical experiences at the Gobelins manufactory, Chevreul observed that the same dyed or colourant-coloured thread appeared different in different environments. The problem therefore lay not in the material, but in the relational system of neighbouring colours. De la loi du contraste simultané des couleurs, published in 1839, was the systematisation of this insight: two colours placed beside one another mutually modify the perception of each other. Neutral grey appears greener beside red, while the red itself appears more intense beside it; in a blue environment, the neutral surface may produce an orange effect, and beside yellow a violet effect. Colour, therefore, does not possess an unchanging visual identity: its concrete appearance derives from the total environmental relation.
+        </p>
+
+        <p>
+          This relational concept of colour becomes one of the most important historical preconditions of the Delaunay research. In Neo-Impressionism, Georges Seurat did not merely apply colour theory, but made the laws governing perception part of painterly construction. Through the separate application of pure patches of colour, optical mixing became decisive in place of physical mixing, and the viewer’s perception also contributed to the emergence of a unified visual effect. The research interprets this as ‘visual addition’: the painter does not present a finished colour to the viewer, but creates the conditions under which perception itself realises the unity of colour.
+        </p>
+
+        <p>
+          In the work of Sonia Delaunay, however, a further step takes place. The relation described by Chevreul and the optical process activated pictorially by Seurat do not remain explanatory principles of perception, but become autonomous organising principles of image-making. The Orphism of the Delaunay couple no longer uses the interaction of colours to optically reorganise a pre-given objective world, but creates an autonomous visual language in which form derives from colour relations. In the interpretation of Orphism formulated by Guillaume Apollinaire, the internal unity of the painting is ensured not by the recognisability of the object, but by the rhythmic interaction of colours.
+        </p>
+
+        <div class="highlight">
+
+          <p>
+            The concept of the ‘generative principle’ therefore requires a more precise meaning within this research framework than merely stating that Delaunay painted colourfully. Generative is that operation of colour in which a given colour is not a closed result, but a condition for further visual events: it determines the perceived intensity of its neighbour, modifies the sense of space, directs the movement of the gaze, creates rhythm, and thereby establishes the conditions for the emergence of further relations. In this sense, colour is not decoration, but an operation.
+          </p>
+
+        </div>
+
+        <p>
+          In the present research, I use the concept of the ‘generative’ as my own working definition: it does not mean the technological, algorithmic image generation of contemporary generative art, but such a relational operation of colour as becomes a condition for the emergence of further visual configurations.
+        </p>
+
+        <p>
+          The research document defines this operation as a concept of colour that is autonomous, relational, temporal and event-like. Colour cannot be treated merely as a technical parameter or reproducible datum, because its meaning and experiential character arise within a system of relations. This definition gives the interpretation of Delaunay’s oeuvre its genuine theoretical weight: the principle of colour appearing in artistic practice is of interest not as a precursor of some later technology, but because it formulates an alternative model of visual generativity whose centre lies in relation, perception and experience.
+        </p>
+
+      </div>
+
+    </section>
+
+
+    <!-- =======================================
+         METHODOLOGY
+         ======================================= -->
+
+    <section
+      class="research-section"
+      id="methodology"
+    >
+
+      <div class="section-header">
+
+        <div class="section-number">
+          Research Chapter 02
+        </div>
+
+        <h2 class="section-title">
+          Development of the Research and Methodology
+        </h2>
+
+      </div>
+
+
+      <div class="content">
+
+        <p>
+          The initial V1 - V9.1 preprint primarily formulated theoretical theses. On the early horizon of the research, the claim was already present that Delaunay’s colour is not a secondary visual element, but the structuring principle of visual thought. Moving forward, however, did not simply mean listing more works. During the research process, the initial conceptual claim gradually unfolded into several interconnected levels of analysis: historical colour theory, theory of perception, analysis of artistic form, intermedial investigation, structural pattern analysis, and a critical examination of the contemporary concept of generativity.
+        </p>
+
+        <p>
+          On the basis of the final research material, the first layer of the methodology is historical-genealogical. The investigation does not treat Delaunay’s art as an isolated modernist phenomenon, but places it in the context of the intellectual and visual legacy of Newton, Goethe, Chevreul and Seurat. The aim is not to establish a simple chain of influence, but to demonstrate how the concept of colour shifted from physical property towards perceptual relation and then towards artistic structuring. The research document interprets this process as an ontological transformation spanning several centuries: colour gradually detaches itself from its original material supports while being reorganised at increasingly high levels of abstraction.
+        </p>
+
+        <p>
+          The second methodological layer is relational visual analysis. Its basic premise is that the work is not the sum of elements. A patch of colour, geometric unit or module does not necessarily carry the meaning under investigation in itself; its significance becomes accessible within the network of the entire composition. This becomes particularly clear in the analysis of Plougastel, where the curving colour fields are not organised according to fixed contours. Here, form is not a precondition of the image, but the dynamic result of colour relations. From a methodological perspective, the research therefore rejects an analysis that attempts to reconstruct the work by breaking it down into discrete, mutually independent elements.
+        </p>
+
+        <p>
+          The third level is the temporal investigation of perception. In the case of Delaunay’s paintings, the viewer does not ‘see’ the composition in a single moment. The movement of the gaze creates ever new centres of tension, while the interaction of colours continuously modifies the visual balance. The painting thus becomes not merely a spatial structure, but a perceptual event unfolding in time.
+        </p>
+
+        <p>
+          The fourth methodological layer is intermedial analysis. A significant advance of the research was the recognition that the generative operation of colour cannot be examined exclusively in painting. Delaunay’s textile design, clothing design and applied arts activity constitute the realisation, on different supports, of the same relational logic. The research therefore does not automatically establish a hierarchy between painting and design, but examines how the structuring capacity of colour changes with changes in the support, the body, movement and use.
+        </p>
+
+        <p>
+          Finally, the methodology of the research applies a critical comparison with contemporary digital and algorithmic image culture. At this point, however, it is important to distinguish between analogy and identity. The research does not claim that Delaunay was a ‘digital artist’, nor does it claim that painting is technically identical to algorithmic image-making. The relationship is structural: in both cases, the question may be posed of how a visual configuration arises from the operation of relations rather than from a pre-given, static result.
+        </p>
+
+        <p>
+          This methodological development essentially resulted in the transformation of the thesis of the initial preprint — ‘colour is generative’ — into a differentiated research model. In the final material, the physical, perceptual, compositional, spatial, temporal, medial and technological dimensions of colour are now distinguished. One of the strongest methodological results of the research is precisely the connection of these levels without seeking to identify them with one another.
+        </p>
+
+      </div>
+
+    </section>
+
+
+    <!-- =======================================
+         FINDINGS
+         ======================================= -->
+
+    <section
+      class="research-section"
+      id="findings"
+    >
+
+      <div class="section-header">
+
+        <div class="section-number">
+          Research Chapter 03
+        </div>
+
+        <h2 class="section-title">
+          Main Research Findings and Detailed Analysis
+        </h2>
+
+      </div>
+
+
+      <div class="content">
+
+        <h3 class="subsection-title">
+          1. Contrastes simultanés: when colour becomes a constitutive factor of form
+        </h3>
+
+        <p>
+          The generative principle of colour becomes most directly perceptible in Sonia Delaunay’s Contrastes simultanés series of paintings, created in 1912, where colour relations operate as active organising elements of the visual structure. According to the interpretation of the research document, in these works scientific colour theory is no longer merely a theoretical background, but an operation that actually creates the composition. The picture surface is constructed through the juxtaposition of intense colour fields, and unity arises not from some external objective order, but from the continuous tension formed between neighbouring colours.
+        </p>
+
+        <p>
+          The red–green, yellow–violet and blue–orange contrasts are not isolated colour pairs. Each colour activates the other. As a consequence of the complementary relation, colour does not close but opens the composition. The viewer’s gaze moves from one field to another, and every new relation generates a new intensity.
+        </p>
+
+        <p>
+          This point makes possible a precise art-historical definition of ‘generativity’. Generative operation here is not the presence of some machine algorithm, but an internal compositional dynamic in which one visual state conditions the next. Colour, therefore, is not a property of form, but one of the causes of the emergence of form.
+        </p>
+
+        <p>
+          Consequently, the status of geometric forms also changes. Rectangles, curving planes and other geometric units are not autonomous carriers of meaning. Their primary function is to carry colour relations. Thus, to use the terminology of the research, form ‘follows’ colour: its significance derives from the chromatic relation in which it participates. Nor is the contour a traditional dividing line any longer; the meeting of colour fields becomes an optical transition.
+        </p>
+
+        <p>
+          The structure of the image is therefore not an assemblage of discrete forms, but a system of ‘interpenetrating chromatic energies’. This is of decisive significance because modernist abstraction must not be understood merely as the abandonment of object representation. In Delaunay’s case, abstraction is a positive construction: the place of objective form is occupied by the relational operation of colour.
+        </p>
+
+
+        <h3 class="subsection-title">
+          2. Bal Bullier: colour, movement and temporal structure
+        </h3>
+
+        <p>
+          The 1913 Bal Bullier appears in the research as the next stage in the development of the generative principle of colour. Here, colour no longer merely creates the internal vibration of a picture surface, but structures an entire sensory environment. The dance hall, music, bodies and the movement of the modern metropolis are not merely represented objects, but experiential layers that become condensed in chromatic dynamism.
+        </p>
+
+        <p>
+          The curved and intersecting structures of the red, orange, yellow, blue and green colour fields do not allow the gaze to arrive at a point of rest. Movement does not derive from some represented gesture, but from the directing force of colours. The composition operates as a visual field in which the eye continuously forms new pathways.
+        </p>
+
+        <p>
+          Bal Bullier is particularly important because of the temporal aspect. Traditional painting often fixes a single selected moment. Delaunay, by contrast, condenses the temporal extension of movement within a single visual presence. Rhythm does not consist of successive scenes, but of a network of simultaneous relations. Every displacement of the viewer’s gaze activates a new rhythmic relation.
+        </p>
+
+        <p>
+          The temporal structure of the painting is therefore not narrative time. It is rather perceptual time: the duration during which visual relations gradually become accessible. In this model, colour not only organises space, but also time.
+        </p>
+
+
+        <h3 class="subsection-title">
+          3. Prismes électriques: the autonomy of abstraction and light
+        </h3>
+
+        <p>
+          The 1914 Prismes électriques carries this problem further in the direction of abstraction. The work addresses the modern experience of electric light, to which the observation of the electric illumination of the Boulevard Saint-Michel in Paris was also connected. The painting does not seek a documentary representation of the urban environment, but transforms the visual effects of light and colour into an autonomous visual structure. Electric light here becomes a perceptual event: it contributes to the dissolution of the contours of objects, the loosening of traditional spatial depth, and the perception of the picture surface as chromatic energy.
+        </p>
+
+        <p>
+          In this context, the system of concentric circles and circular bands is not merely geometric ornamentation. The circle is a structural model capable of transmitting chromatic relations in every direction. The gaze does not move linearly across the image, but performs expanding and returning movements.
+        </p>
+
+        <p>
+          Yet the balance of forces between centre and periphery never becomes final. At one moment the gaze is drawn towards the centre, and at another it turns towards the outward-radiating colour fields. The work thus creates not a stable equilibrium, but constant reorganisation.
+        </p>
+
+        <p>
+          At the same time, the repetition of arcs, sectors and segments provides structural discipline. Geometry here does not restrict the movement of colour, but enables its continuous unfolding. Every recurring unit becomes a condition for the emergence of new chromatic relations. This is one of the most important research findings concerning Prismes électriques: geometry and colour are not opposing systems, but two aspects of the same generative process.
+        </p>
+
+
+        <h3 class="subsection-title">
+          4. Textile as a dynamic chromatic space
+        </h3>
+
+        <p>
+          Delaunay’s activity as a textile designer carries out a fundamental correction in relation to painting-centred art-historical interpretation. According to the research, textile is not a mere support for painterly results, but an autonomous medium in which the relational logic of simultaneism acquires new dimensions.
+        </p>
+
+        <p>
+          In Delaunay’s practice of textile and clothing design, colour leaves the exclusive framework of the flat, static picture surface. The garment is connected to a moving body. Cut lines, seams, folds and pleats are not merely technical necessities, but active factors in the creation of colour relations. When the body moves, the points of encounter between neighbouring colour surfaces change, and new visual balances thereby arise.
+        </p>
+
+        <p>
+          The principle of tissu simultané thus transforms colour into a three-dimensional and temporal experience. The wearer is not a mere carrier of the composition, but a participant in its continuous coming into being. Colour is not a finished pattern that the body ‘wears’; the movement of the body actualises the chromatic structure.
+        </p>
+
+        <p>
+          The concept of pattern likewise undergoes transformation. Diamonds, zigzags, bands and planar forms become recurring modules that have no isolated significance. Variations in their size, direction and colour relations create new configurations. Repetition, therefore, is not mechanical copying, but rhythmic variation. Textile becomes a structure that can, in principle, be extended infinitely without losing its coherence.
+        </p>
+
+        <p>
+          At this point, the concept of generativity already clearly separates itself from simple decorativeness. Decoration adds a motif to a finished structure. In Delaunay’s textile art, by contrast, the structure itself arises from the interaction of colour, geometry, repetition and material.
+        </p>
+
+
+        <h3 class="subsection-title">
+          5. The textile matrix and structural thinking
+        </h3>
+
+        <p>
+          The research’s examination of textiles also recalls, as historical antecedents, Chevreul’s experiences with Gobelins weaving and the technological logic of the Jacquard loom. At the Gobelins manufactory, the systematisation of dyed threads made it necessary for colours to be identifiable not as isolated samples, but as an interconnected system. The lightness, saturation and tone of colours became interpretable within a structured space.
+        </p>
+
+        <p>
+          The system of the Jacquard loom, patented in 1804, represents yet another level: it connected the creation of pattern to a predetermined sequence of physical instructions. Each position of the punched cards determined the movement of the warp threads. Thus, the pattern became reproducible as a sequence of elementary decisions.
+        </p>
+
+        <p>
+          The research does not use this historical thread merely as an interesting episode in the history of technology. Its significance lies in demonstrating that, even before the digital era, visual structure could be conceived as a system of rules, modules, repetitions and relations. Delaunay’s textile design practice therefore occupies an intermediate historical position in which colour simultaneously remains material and becomes structural.
+        </p>
+
+        <p>
+          Every node of the textile carries both spatial and chromatic determination. A single node, however, does not explain the entire pattern; the visual character of the system as a whole arises from the coordinated interaction of countless units. The pattern, therefore, is not simply ‘placed onto’ the textile, but unfolds from the order of weaving.
+        </p>
+
+
+        <h3 class="subsection-title">
+          6. The unified system of painting, textile and design
+        </h3>
+
+        <p>
+          One of the most important findings of the research is that it demonstrates not a stylistic but a structural continuity between Delaunay’s painting and design activities. Painting and textile have different material conditions, yet the same fundamental principles operate within them: relation, rhythm, modulation, repetition, contrast, movement, and the mutual determination of part and whole.
+        </p>
+
+        <p>
+          This is particularly important from the perspective of one of the fundamental problems of modernism, the boundary between art and applied art. In Delaunay’s practice, colour does not distinguish between ‘high’ and ‘low’ media. The same chromatic thinking can operate in painting, textile, clothing, interior space and the everyday environment. The research therefore interprets interdisciplinarity not merely as generic versatility, but as an ontological property of colour: colour is capable of connecting object, space, body and perception.
+        </p>
+
+
+        <h3 class="subsection-title">
+          7. The digital image as a new structural state
+        </h3>
+
+        <p>
+          The present research does not assume a historical or technological continuity between Delaunay’s operation of colour and digital image-making. The relationship can be interpreted as a structural analogy: in Delaunay’s works, the relations of colours to one another shape the visual structure, while in digital systems similar relations can be formalised with the help of algorithmic rules. The parallel therefore does not mean that Delaunay anticipated digital or algorithmic art, but that the relational logic of colour she employed can be modelled in a new way within a contemporary digital environment.
+        </p>
+
+        <p>
+          The second major theoretical axis of the research is the digital image system. The research assumes a structural kinship between the textile matrix and the digital raster. The intersection of weaving and the pixel can both be interpreted as elementary units that do not carry the meaning of the entire image in themselves, but become interpretable in relation to surrounding units.
+        </p>
+
+        <p>
+          The difference, however, is ontological. The material structure of textile depends on the thickness, twist, dyeing and surface properties of the thread. The digital image, by contrast, transforms visual information into numerical states. The pixel appears as a discrete unit possessing coordinates and colour information.
+        </p>
+
+        <p>
+          The research does not interpret this historical transformation merely as technical development. The concept of the ‘image as surface’ is gradually supplemented by the perspective of the ‘image as operation’. In computer image-making, the visual configuration is not necessarily the stored form of a previously created image, but the result of a computational process. This perspective becomes increasingly prominent with the development of computer image-making, and then becomes decisive in procedural and algorithmic systems.
+        </p>
+
+
+        <h3 class="subsection-title">
+          8. The critical relationship between simultaneism and algorithmic generativity
+        </h3>
+
+        <p>
+          At this point, the research arrives at its most controversial and, at the same time, most productive thesis. From the perspective of contemporary generative art systems, Delaunay’s simultaneism can be interpreted as a formal system in which visual configuration arises from recurring relations. Complementary contrasts, modular repetitions and periodic chromatic shifts can be described as structural invariants that can be actualised anew in different media.
+        </p>
+
+        <p>
+          Processing and p5.js, for example, appear in the research as formal environments in which colour relations can become logical conditions, rhythmic repetition can become cycles and iterations, and geometric modules can become representable in arrays and two-dimensional data structures. This, however, does not mean the simple digital reproduction of Delaunay’s works. The aim is the formalisation of internal operation.
+        </p>
+
+        <p>
+          The difference is particularly sharp between ‘combinatorial generativity’ and Delaunay’s relational generativity. In algorithmic image-making, colour often appears as data, a parameter or an optimisable variable. By contrast, the research describes Delaunay’s colour as an event that unfolds from the interaction of colours and the perceptual activity of the viewer.
+        </p>
+
+        <p>
+          The research therefore does not claim that algorithmic generativity is identical to Delaunay’s generativity. On the contrary: it is the difference between the two systems that makes possible the recognition of Delaunay’s theoretical significance. The digital system can formalise relations, but this formalisation does not exhaust the experience of colour.
+        </p>
+
+
+        <h3 class="subsection-title">
+          9. Shader, parallel computation and the event-like character of colour
+        </h3>
+
+        <p>
+          The most concrete level of the technological analysis of the research is shader architecture. In the fragment shader, every pixel can be calculated on the basis of its own spatial coordinates, vectors, trigonometric functions and time parameters. The entire picture surface thus becomes not an aggregate of elements created sequentially, but a field calculated in parallel.
+        </p>
+
+        <p>
+          The normalised UV coordinate system treats the picture surface as a unified mathematical space. Within this system, colour becomes a function of position, time and other mathematical variables. Concentric structures, radial oscillations, periodic modulations and turbulent transitions can be produced through different parameterisations of the same mathematical system. The visual image thus becomes an event resynthesised at runtime.
+        </p>
+
+        <p>
+          At this point, the structural parallel between simultaneism and contemporary visual systems becomes particularly sharp. In Delaunay’s case, every colour acquires its visual character through its relation to its environment; in a shader environment, the value of every pixel follows from the momentary state of a mathematical system. Relational organisation here may appear not merely as a compositional principle, but also in computational rules.
+        </p>
+
+      </div>
+
+    </section>
+
+
+    <!-- =======================================
+         CONCEPT
+         ======================================= -->
+
+    <section
+      class="research-section"
+      id="concept"
+    >
+
+      <div class="section-header">
+
+        <div class="section-number">
+          Research Chapter 04
+        </div>
+
+        <h2 class="section-title">
+          The Structural Development of the Concept
+        </h2>
+
+      </div>
+
+
+      <div class="content">
+
+        <p>
+          The most important difference between the initial preprint and the research document is not simply an increase in length or in the number of examples. The decisive change is conceptual in nature. According to the initial claim, colour in the art of Sonia Delaunay is autonomous and generative. In the course of the development of the research, however, it became clear that this statement possesses genuine explanatory force only if the different operational levels of generativity are also distinguished.
+        </p>
+
+        <p>
+          At the first level, colour is a perceptual relation. Following Chevreul, a single colour is not interpretable in itself, but through the modifying effect of neighbouring colours. At the second level, this relation becomes painterly construction: Delaunay does not merely undergo or represent contrast, but consciously transforms it into a compositional operation. At the third level, the relation creates a structure of space and time. At the fourth level, through modular organisation, it becomes actualisable in other media as well. At the fifth level, it can be interpreted as a formal system that can be related to digital and algorithmic image-making.
+        </p>
+
+        <p>
+          During this development, the concept of abstraction also undergoes transformation. Initially, abstraction could easily be interpreted as the gradual loss of figurative representation. The results of the research, however, make a stronger claim possible: Delaunay’s abstraction is the autonomisation of relations. It is not merely that fewer objects appear, but that a different kind of visual causality comes into being. Instead of the object, the colour relation creates the form.
+        </p>
+
+        <p>
+          This insight unifies the analyses of Contrastes simultanés, Bal Bullier and Prismes électriques. In the first, the direct interaction of colour fields creates the visual structure; in the second, this same relation becomes the carrier of movement and temporal rhythm; in the third, chromatic energy becomes almost completely detached from objective reference and organises the image as a concentric, modular system. The three works are thus not three isolated stylistic stages, but successive configurations of a single process of thought.
+        </p>
+
+        <p>
+          The transition to the field of textile makes this same development visible under different material conditions. The colour field now operates not on a static canvas, but on a surface that bends, creases, moves and is worn. The colour relation thus encompasses not only the movement of the viewer’s gaze, but also the actual movement of the object and the body. In this sense, generativity acquires a material and social dimension.
+        </p>
+
+        <p>
+          Another decisive moment in the conceptual development of the research is the emergence of a critique of ‘colour as data’. The early claim could easily have led to the conclusion that Delaunay’s colour system is interesting because it anticipates algorithmic image generation. The later analysis produced a more nuanced position. Delaunay’s significance does not lie in the fact that she technically anticipated computer graphics, but in the fact that she developed a relational visual model that later technological systems can partially formalise.
+        </p>
+
+        <p>
+          This distinction is fundamental. According to the final theoretical position of the research, generativity is not identical to automation. A system can be generative without being algorithmic, and it can be algorithmic without fully preserving the experiential generativity of colour. Delaunay’s model therefore functions as a critical counterpoint to contemporary technological image culture.
+        </p>
+
+        <div class="highlight">
+
+          <p>
+            At this point, the research arrives at a coherent interpretative model: one of the radical theses of modernism is not simply the dissolution of object representation, but the autonomy of the internal operation of visual structure. Colour is one of the strongest carriers of this process. Autonomous colour becomes an organising principle of the image; and the image is not a surface for the representation of objects, but the operation of relations.
+          </p>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =======================================
+         CONCLUSION
+         ======================================= -->
+
+    <section
+      class="research-section"
+      id="conclusion"
+    >
+
+      <div class="section-header">
+
+        <div class="section-number">
+          Research Chapter 05
+        </div>
+
+        <h2 class="section-title">
+          Conclusion and Scholarly Significance
+        </h2>
+
+      </div>
+
+
+      <div class="content">
+
+        <p>
+          On the basis of the results of the research, one of the most important modernist significances of the art of Sonia Delaunay can be grasped in the transformation of the ontological status of colour. Colour is not a secondary attribute, not the filling of some predetermined form, and not merely a decorative effect. It is an autonomous visual force capable of organising form, rhythm, space and the temporality of perception.
+        </p>
+
+        <p>
+          In the historical context, this claim belongs to a long process of transformation. Newton distinguished colour as an investigable phenomenon of the physical structure of light; Goethe directed attention towards the active operation of perception; Chevreul formulated the relational nature of colour; Seurat transformed this relation into a painterly perceptual structure; and Sonia and Robert Delaunay, in Orphism, made the autonomy of colour relations one of the central organising principles of modern painting.
+        </p>
+
+        <p>
+          Sonia Delaunay’s special position lies in the fact that she did not leave this logic within the boundaries of painting. In the Contrastes simultanés series, colour itself constructs the composition; in Bal Bullier, chromatic relation becomes the organiser of movement and perceptual time; in Prismes électriques, colour and light structure space as abstract energy; and in textile design, this same logic becomes a modular, repetitive system actualised by bodily movement.
+        </p>
+
+        <p>
+          One of the most important scholarly contributions of the research is therefore that it interprets the relationship between painting and the applied arts not merely as generic crossing, but as a common structural language. The same relational principle of colour is actualised in different ways in different media. This makes possible a rereading of Delaunay’s oeuvre in which textile and design are not peripheral additions to painting, but autonomous evidence of colour-theoretical thought.
+        </p>
+
+        <p>
+          Another significant result is the redefinition of the relationship between modernism and contemporary algorithmic visuality. The research does not establish a linear technological-historical prediction. Delaunay is not important because she ‘predicted’ the digital image. Her importance lies in the fact that she created a visual way of thinking in which the structure of the image arises from internal relations. Later digital systems can formalise this relational operation mathematically: the pixel can be connected to a coordinate, colour to a variable, geometric repetition to a cycle, and dynamics to a time parameter.
+        </p>
+
+        <p>
+          In shader-based image-making, pixels calculated in parallel and normalised UV coordinates create a system in which colour arises at every moment as a function of the state of the entire mathematical field. The research discusses this as a possibility for the technological reinterpretation of simultaneism. At the same time, psychophysiological perception remains a separate level: the machine can calculate conditions of light, but the experience of colour takes place in the body of the viewer.
+        </p>
+
+        <p>
+          This distinction ensures the theoretical balance of the research. Technological formalisation and perceptual experience cannot be identified with one another. Contemporary algorithmic systems are capable of representing, optimising, recalculating and varying colour numerically; Delaunay’s theoretical significance, however, lies in the fact that she demonstrates the operation of colour as a relational event whose meaning is fulfilled only in perception and in surrounding relations.
+        </p>
+
+        <p>
+          The research therefore also expands the concept of generativity. We may call generative not only a system that produces new images. A visual system can also be generative when every element becomes a condition for the emergence of further relations. This is what occurs in Delaunay’s world of colour: red is not simply red, but a neighbouring force that activates green, blue or orange; the geometric module is not an autonomous motif, but a structural unit that makes new chromatic relations possible; the textile motif does not merely repeat, but creates rhythmic variations; and the moving garment reorganises the spatial relations of colour fields at every moment.
+        </p>
+
+        <p>
+          The generative principle of colour identified in Sonia Delaunay’s oeuvre thus contributes to a deeper definition of the visual language of modernism. Modernism here is not merely a stylistic-historical period, but a reorganisation of visual causality. The question is no longer what the image represents, but through what internal operations the visual appearance comes into being. Delaunay’s answer to this problem is the autonomy of colour.
+        </p>
+
+        <p>
+          In this sense, the final thesis of the research is not that colour ‘anticipated’ the algorithm. It can be formulated much more precisely as follows: Delaunay’s art demonstrates that visual form can arise from the dynamics of relations. Later technologies can actualise this idea under different material and mathematical conditions. The painted colour field, the textile module, the weaving grid, the pixel and the procedural colour field are therefore not identical things, but they can be organised around a common question: how does visual unity become perceptible from the internal relations of a system?
+        </p>
+
+        <p>
+          At this point, Sonia Delaunay’s art-historical significance extends beyond stylistic history. Her work embodies a modernist visual way of thinking in which colour is simultaneously a perceptual event, a structuring force, a space-forming factor, a temporal rhythm and an organising principle permeating media. The synthesis of painting and the applied arts is therefore not an incidental characteristic, but the central evidence of the research: if colour is truly an autonomous generative principle, then it does not require a single privileged support.
+        </p>
+
+        <p>
+          Ultimately, the deepest result of the research is the demonstration that the autonomy of colour is at the same time the autonomy of visual thought. Colour does not merely communicate something, but creates relations; and these relations create perceptible movement, space and time. Delaunay’s modernism therefore does not simply contribute to the history of non-objective painting. It creates a visual epistemology in which the image is not a closed state, but a process; not a pre-given form, but a relation; not a mere surface, but an event actualised in perception.
+        </p>
+
+        <p>
+          From the initial research hypothesis, a unified theoretical model thus emerges: colour is autonomous because it is not a subordinate property of some external form; relational because it acquires its concrete character in its environment; generative because it creates the conditions for new visual states; temporal because its meaning unfolds in the movement of the gaze; space-forming because visual space is organised from colour relations; and transferable in a medial sense because the same underlying logic can be activated in painting, textile and other structural visual systems.
+        </p>
+
+        <p>
+          In the history of modernism, colour thereby becomes not the opposite pole of form, but one of the primary conditions of the emergence of form. The scholarly significance of Sonia Delaunay’s work can be grasped precisely in the fact that she realised the autonomy of colour not merely as aesthetic freedom, but as a form of structural thought in which the visual world itself becomes accessible as process, interaction and a continuously reorganising system. According to the results of the research document, this is the point at which a genuinely productive, yet critically maintainable, relationship can be established between modernist colour theory and contemporary visual systems: on the basis not of technical identity, but of the principle of generative relation.
+        </p>
+
+      </div>
+
+    </section>
+
+
+    <!-- =======================================
+         FURTHER RESEARCH
+         ======================================= -->
+
+    <section
+      class="research-section"
+      id="further-research"
+    >
+
+      <div class="section-header">
+
+        <div class="section-number">
+          Research Chapter 06
+        </div>
+
+        <h2 class="section-title">
+          Further Research Possibilities
+        </h2>
+
+      </div>
+
+
+      <div class="content">
+
+        <p>
+          At the conclusion of the present research, however, a question becomes visible that already extends beyond the direct examination of Sonia Delaunay’s oeuvre. The foundational research has demonstrated that colour does not operate as an isolated visual property, but becomes perceptible in relations, perceptual processes and the interaction of surrounding visual structures. In this way, the research sought to answer the question of the image-forming and structuring operation of colour.
+        </p>
+
+        <p>
+          This finding, however, also opens another problem that is no longer examined by the foundational research. If the visual character of colour derives not exclusively from the colour itself, but from its relationship with its environment and with the perception of the viewer, then the question arises as to what prior experiences and learning processes make possible the recognition, differentiation, naming and interpretation of colours.
+        </p>
+
+        <p>
+          From this follows an investigation of how the experience of colour develops in human beings, and how it is shaped within the cultural and technological environment surrounding them. Two interconnected but independent research directions arise from this problem.
+        </p>
+
+        <p>
+          The first research examines the role of colour in pedagogical and learning environments, particularly children’s perceptual experience in relation to colour. Here, the question is no longer the image-forming operation of colour, but the environment in which the child regularly encounters colours, recognises and differentiates them, and learns to interpret them. The emergence of generative artificial intelligence becomes relevant in this context because the creation and modification of visual environments may become possible with a speed and variability not previously experienced.
+        </p>
+
+        <p>
+          The second research develops a further question from this problem: to what extent can knowledge and meaning associated with colour be regarded as universal, and to what extent are they culturally mediated? The child does not learn colours in isolation, but encounters them in the milieu of objects, images, linguistic categories, social conventions and cultural symbols. The global systems of algorithmic image-making therefore create a new research situation: the same technological systems encounter different colour associations, visual traditions and systems of meaning in different cultural environments.
+        </p>
+
+        <p>
+          In this sense, what arises between the three research projects is not direct thematic identity, but a shift in the direction of the question: the first research examines the emergence and structuring operation of colour, while the subsequent research projects examine the conditions of the perception, acquisition and cultural mediation of colour.
+        </p>
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <!-- =========================================
+       FOOTER
+       ========================================= -->
+
+  <footer>
+
+    <div class="footer-container">
+
+      <div class="footer-grid">
+
+
+        <div>
+
+          <div class="footer-eyebrow">
+            Digital Identity & Contact
+          </div>
+
+          <h2 class="footer-title">
+            Colour as relation.
+            Perception as event.
+            Structure as process.
+          </h2>
+
+          <p class="footer-description">
+            Nicholas Van-Orton · Art Historical Research
+          </p>
+
+        </div>
+
+
+        <div>
+
+          <div class="contact-label">
+            Verified Contact Points
+          </div>
+
+
+          <div class="contact-list">
+
+
+            <!-- EMAIL -->
+
+            <a
+              class="contact-link"
+              href="mailto:nvo@nvo987.us"
+            >
+
+              <span class="contact-main">
+                nvo@nvo987.us
+              </span>
+
+              <span class="contact-type">
+                EMAIL ↗
+              </span>
+
+            </a>
+
+
+            <!-- DID -->
+
+            <a
+              class="contact-link"
+              href="https://identity.nvo987.us/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Open DID web identity"
+            >
+
+              <span class="did">
+                did:web:identity.nvo987.us
+              </span>
+
+              <span class="contact-type">
+                DID ↗
+              </span>
+
+            </a>
+
+
+            <!-- WEBSITE -->
+
+            <a
+              class="contact-link"
+              href="https://www.nvo987.us/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+
+              <span class="contact-main">
+                www.nvo987.us
+              </span>
+
+              <span class="contact-type">
+                WEB ↗
+              </span>
+
+            </a>
+
+
+            <!-- LEGAL -->
+
+            <a
+              class="contact-link"
+              href="https://nvo987.us/legal-information.htlm"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+
+              <span class="contact-main">
+                Legal Information
+              </span>
+
+              <span class="contact-type">
+                LEGAL ↗
+              </span>
+
+            </a>
+
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <div class="footer-bottom">
+
+        <div>
+          © Nicholas Van-Orton
+        </div>
+
+        <div>
+          Color as a Generative Principle in the Work of Sonia Delaunay
+        </div>
+
+      </div>
+
+    </div>
+
+  </footer>
+
+
+</body>
+  </html> 
