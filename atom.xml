@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title>Color as a Generative Principle in the Work of Sonia Delaunay</title>
+
+  <subtitle>
+    Art historical research by Nicholas Van-Orton examining color,
+    simultaneism, perception, textile design and generative visual systems.
+  </subtitle>
+
+  <id>https://delaunaycolor.us/</id>
+
+  <link
+    href="https://delaunaycolor.us/"
+    rel="alternate"
+    type="text/html"
+  />
+
+  <link
+    href="https://delaunaycolor.us/atom.xml"
+    rel="self"
+    type="application/atom+xml"
+  />
+
+  <updated>2026-11-03T00:00:00Z</updated>
+
+  <author>
+    <name>Nicholas Van-Orton</name>
+    <uri>https://www.nvo987.us/</uri>
+    <email>nvo@nvo987.us</email>
+  </author>
+
+  <rights>
+    Copyright (c) 2026 Nicholas Van-Orton. All Rights Reserved.
+  </rights>
+
+  <category term="Art Historical Research"/>
+  <category term="Sonia Delaunay"/>
+  <category term="Color Theory"/>
+  <category term="Modernism"/>
+  <category term="Generative Art"/>
+
+  <entry>
+
+    <title>
+      Color as a Generative Principle in the Work of Sonia Delaunay
+    </title>
+
+    <id>https://delaunaycolor.us/#research</id>
+
+    <link
+      href="https://delaunaycolor.us/"
+      rel="alternate"
+      type="text/html"
+    />
+
+    <updated>2026-11-03T00:00:00Z</updated>
+
+    <author>
+      <name>Nicholas Van-Orton</name>
+    </author>
+
+    <summary>
+      An art-historical research study examining color as an
+      autonomous, relational and generative principle in the
+      artistic practice of Sonia Delaunay. The research explores
+      simultaneism, painting, textile design, perception and the
+      structural relationship between modernist color theory
+      and contemporary digital visual systems.
+    </summary>
+
+    <category term="Sonia Delaunay"/>
+    <category term="Simultaneism"/>
+    <category term="Color Theory"/>
+    <category term="Textile Design"/>
+    <category term="Digital Visual Systems"/>
+
+  </entry>
+
+</feed>
