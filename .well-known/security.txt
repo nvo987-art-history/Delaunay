@@ -1,0 +1,10 @@
+# Security Policy
+# https://delaunaycolor.us/.well-known/security.txt
+
+Contact: mailto:nvo@nvo987.us
+
+Expires: 2027-11-03T00:00:00.000Z
+
+Preferred-Languages: en
+
+Canonical: https://delaunaycolor.us/.well-known/security.txt
