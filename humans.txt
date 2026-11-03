@@ -1,0 +1,76 @@
+/* TEAM */
+
+Research Author: Nicholas Van-Orton
+ORCID: 0009-0007-4628-1871
+Website: https://www.nvo987.us/
+Digital Identity: https://identity.nvo987.us/
+Email: nvo@nvo987.us/
+
+/* PROJECT */
+
+Project Name: Color as a Generative Principle in the Work of Sonia Delaunay
+
+Project URL: https://delaunaycolor.us/
+
+Project Type: Art Historical Research
+
+Primary Language: English
+
+Research Area:
+Art History, Modernism, Color Theory, Visual Perception,
+Simultaneism, Textile Design, Generative Visual Systems.
+
+/* DESIGN */
+
+Design Philosophy:
+Minimalist academic editorial design.
+
+Visual Identity:
+Warm neutral background, dark graphite surfaces,
+muted gold accents and editorial typography.
+
+Typography:
+Inter
+Playfair Display
+
+/* TECHNOLOGY */
+
+HTML: HTML5
+CSS: CSS3
+Layout: Responsive
+Metadata: Schema.org
+Social Metadata: Open Graph
+Search Metadata: SEO
+Feeds: RSS 2.0 / Atom 1.0
+Semantic Metadata: FOAF
+AI Documentation: llms.txt / ai.txt
+
+/* CONTENT */
+
+Primary Subject:
+Sonia Delaunay and the generative principle of color.
+
+Research Focus:
+The autonomous, relational, spatial and temporal
+operation of color in painting and textile design.
+
+Historical References:
+Isaac Newton
+Johann Wolfgang von Goethe
+Michel Eugène Chevreul
+Georges Seurat
+Guillaume Apollinaire
+Sonia Delaunay
+
+/* CONTACT */
+
+Email: nvo@nvo987.us
+Website: https://www.nvo987.us/
+Legal: https://nvo987.us/legal-information.html
+
+/* COPYRIGHT */
+
+Copyright (c) 2026 Nicholas Van-Orton.
+All Rights Reserved.
+
+/* END */
