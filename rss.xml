@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<rss version="2.0">
+
+  <channel>
+
+    <title>
+      Color as a Generative Principle in the Work of Sonia Delaunay
+    </title>
+
+    <link>
+      https://delaunaycolor.us/
+    </link>
+
+    <description>
+      Art historical research by Nicholas Van-Orton examining
+      the autonomous, relational and generative operation of color
+      in the work of Sonia Delaunay.
+    </description>
+
+    <language>en-us</language>
+
+    <copyright>
+      Copyright (c) 2026 Nicholas Van-Orton. All Rights Reserved.
+    </copyright>
+
+    <managingEditor>
+      nvo@nvo987.us (Nicholas Van-Orton)
+    </managingEditor>
+
+    <webMaster>
+      nvo@nvo987.us (Nicholas Van-Orton)
+    </webMaster>
+
+    <lastBuildDate>Tue, 03 Nov 2026 00:00:00 GMT</lastBuildDate>
+
+    <generator>Custom RSS 2.0 Feed</generator>
+
+    <docs>https://www.rssboard.org/rss-specification</docs>
+
+    <ttl>1440</ttl>
+
+    <category>Art Historical Research</category>
+
+    <category>Art History</category>
+
+    <category>Color Theory</category>
+
+    <category>Modernism</category>
+
+    <category>Sonia Delaunay</category>
+
+    <image>
+      <url>https://delaunaycolor.us/</url>
+      <title>Color as a Generative Principle</title>
+      <link>https://delaunaycolor.us/</link>
+    </image>
+
+    <item>
+
+      <title>
+        Color as a Generative Principle in the Work of Sonia Delaunay
+      </title>
+
+      <link>
+        https://delaunaycolor.us/
+      </link>
+
+      <guid isPermaLink="true">
+        https://delaunaycolor.us/
+      </guid>
+
+      <description>
+        <![CDATA[
+          An art-historical investigation into the autonomy
+          of color in Sonia Delaunay's artistic practice.
+
+          The research explores simultaneous contrast,
+          Orphism, visual perception, painting, textile design,
+          modular structures and the relationship between
+          modernist color theory and contemporary digital
+          visual systems.
+        ]]>
+      </description>
+
+      <author>
+        nvo@nvo987.us (Nicholas Van-Orton)
+      </author>
+
+      <category>Sonia Delaunay</category>
+
+      <category>Color Theory</category>
+
+      <category>Simultaneism</category>
+
+      <category>Textile Design</category>
+
+      <category>Generative Art</category>
+
+    </item>
+
+  </channel>
+
+</rss>
