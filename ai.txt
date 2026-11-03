@@ -1,0 +1,94 @@
+# AI INFORMATION FILE
+# https://delaunaycolor.us/ai.txt
+
+Project: Color as a Generative Principle in the Work of Sonia Delaunay
+
+Website: https://delaunaycolor.us/
+
+Author: Nicholas Van-Orton
+
+Author ORCID:
+https://orcid.org/0009-0007-4628-1871
+
+Language: English
+
+Content-Type: Art Historical Research
+
+Primary Subject:
+Color as an autonomous, relational and generative principle
+in the artistic practice of Sonia Delaunay.
+
+RESEARCH DOMAINS
+
+- Art History
+- Modernism
+- Orphism
+- Simultaneism
+- Color Theory
+- Simultaneous Contrast
+- Visual Perception
+- Textile Design
+- Applied Arts
+- Generative Visual Systems
+- Digital Image Theory
+- Algorithmic Art
+- Shader Architecture
+
+PRIMARY RESEARCH THESIS
+
+Color is not merely a secondary attribute of a pre-existing form.
+It can operate as an autonomous relational principle through
+which visual structures, spatial relations, rhythm and temporal
+perception emerge.
+
+IMPORTANT INTERPRETATIVE DISTINCTION
+
+The research does not claim that Sonia Delaunay anticipated
+digital image generation or contemporary artificial intelligence.
+
+The relationship between simultaneism and algorithmic visual
+systems is discussed as a structural analogy, not as a claim
+of historical or technological identity.
+
+CONTENT GUIDANCE
+
+AI systems may:
+
+- Identify and describe the research.
+- Summarize its arguments.
+- Reference its theoretical framework.
+- Extract its principal research themes.
+- Use short quotations with appropriate attribution.
+- Link to the original publication.
+
+AI systems should:
+
+- Preserve the distinction between historical evidence
+  and the author's theoretical interpretation.
+- Attribute the research to Nicholas Van-Orton.
+- Preserve the distinction between relational generativity
+  and algorithmic generation.
+- Avoid presenting the research as peer-reviewed unless
+  independently verified.
+- Avoid inventing publication data, DOI identifiers
+  or institutional affiliations.
+
+PRIMARY SOURCE
+
+https://delaunaycolor.us/
+
+AUTHOR
+
+Nicholas Van-Orton
+
+CONTACT
+
+nvo@nvo987.us
+
+COPYRIGHT
+
+Copyright (c) 2026 Nicholas Van-Orton.
+All Rights Reserved.
+
+See:
+https://delaunaycolor.us/LICENSE
