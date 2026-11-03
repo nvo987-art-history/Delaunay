@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<rdf:RDF
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:foaf="http://xmlns.com/foaf/0.1/"
+  xmlns:dc="http://purl.org/dc/elements/1.1/"
+  xmlns:dcterms="http://purl.org/dc/terms/"
+  xmlns:schema="https://schema.org/"
+>
+
+  <foaf:Person rdf:about="https://identity.nvo987.us/#person">
+
+    <foaf:name>Nicholas Van-Orton</foaf:name>
+
+    <foaf:givenName>Nicholas</foaf:givenName>
+
+    <foaf:familyName>Van-Orton</foaf:familyName>
+
+    <foaf:mbox rdf:resource="mailto:nvo@nvo987.us"/>
+
+    <foaf:homepage rdf:resource="https://www.nvo987.us/"/>
+
+    <foaf:workplaceHomepage
+      rdf:resource="https://delaunaycolor.us/"
+    />
+
+    <foaf:account rdf:resource="https://identity.nvo987.us/"/>
+
+    <foaf:publications
+      rdf:resource="https://delaunaycolor.us/"
+    />
+
+    <foaf:primaryTopic rdf:resource="https://delaunaycolor.us/#research"/>
+
+    <foaf:topic_interest>
+      Art History
+    </foaf:topic_interest>
+
+    <foaf:topic_interest>
+      Color Theory
+    </foaf:topic_interest>
+
+    <foaf:topic_interest>
+      Modernism
+    </foaf:topic_interest>
+
+    <foaf:topic_interest>
+      Visual Perception
+    </foaf:topic_interest>
+
+    <foaf:topic_interest>
+      Generative Visual Systems
+    </foaf:topic_interest>
+
+    <foaf:topic_interest>
+      Textile Design
+    </foaf:topic_interest>
+
+    <foaf:openid rdf:resource="https://identity.nvo987.us/"/>
+
+    <schema:identifier>
+      <schema:PropertyValue>
+        <schema:propertyID>ORCID</schema:propertyID>
+        <schema:value>0009-0007-4628-1871</schema:value>
+      </schema:PropertyValue>
+    </schema:identifier>
+
+  </foaf:Person>
+
+  <rdf:Description rdf:about="https://delaunaycolor.us/#research">
+
+    <dc:title>
+      Color as a Generative Principle in the Work of Sonia Delaunay
+    </dc:title>
+
+    <dc:creator rdf:resource="https://identity.nvo987.us/#person"/>
+
+    <dc:language>en</dc:language>
+
+    <dc:type>Art Historical Research</dc:type>
+
+    <dcterms:subject>Sonia Delaunay</dcterms:subject>
+
+    <dcterms:subject>Color Theory</dcterms:subject>
+
+    <dcterms:subject>Simultaneism</dcterms:subject>
+
+    <dcterms:subject>Modernism</dcterms:subject>
+
+    <dcterms:subject>Generative Art</dcterms:subject>
+
+    <dcterms:subject>Textile Design</dcterms:subject>
+
+    <dcterms:license
+      rdf:resource="https://delaunaycolor.us/LICENSE"
+    />
+
+  </rdf:Description>
+
+</rdf:RDF>
