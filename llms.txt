@@ -1,0 +1,173 @@
+# Color as a Generative Principle in the Work of Sonia Delaunay
+
+> Art historical research by Nicholas Van-Orton examining
+> color as an autonomous, relational and generative principle
+> in the artistic practice of Sonia Delaunay.
+
+Official website: https://delaunaycolor.us/
+
+Author: Nicholas Van-Orton
+
+ORCID: https://orcid.org/0009-0007-4628-1871
+
+Language: English
+
+Content type: Art Historical Research
+
+## Overview
+
+This research investigates the transformation of color from
+a secondary visual attribute into an autonomous organizing
+principle of visual structure.
+
+The central argument is that color can generate form, spatial
+relationships, rhythm and temporal perceptual experiences
+through the interaction of chromatic elements.
+
+The research examines Sonia Delaunay's artistic practice
+within the historical development of color theory and
+modernist abstraction.
+
+## Central Research Thesis
+
+Color is not simply a property of an already existing form.
+
+Color can function as a relational and generative operation
+through which visual configurations emerge.
+
+A color's visual character is influenced by neighboring
+colors, perceptual conditions and the broader structure
+of the composition.
+
+## Research Chapters
+
+### 1. Introduction and Research Framework
+
+Historical and theoretical foundations of color theory.
+
+### 2. Development of the Research and Methodology
+
+Historical-genealogical research, relational visual analysis,
+temporal perception and intermedial investigation.
+
+### 3. Main Research Findings and Detailed Analysis
+
+Detailed investigation of:
+
+- Contrastes simultanés (1912)
+- Bal Bullier (1913)
+- Prismes électriques (1914)
+- Textile and clothing design
+- Textile matrices
+- Structural repetition
+- Painting and applied arts
+- Digital image systems
+- Algorithmic generativity
+- Shader architecture
+
+### 4. The Structural Development of the Concept
+
+The evolution of generativity from perceptual relations
+to compositional, spatial, temporal and medial structures.
+
+### 5. Conclusion and Scholarly Significance
+
+The autonomy of color as a principle of modernist visual thought.
+
+### 6. Further Research Possibilities
+
+Color perception, education, cultural mediation and
+artificial intelligence.
+
+## Historical and Theoretical Context
+
+The research discusses the contributions of:
+
+- Isaac Newton — Opticks (1704)
+- Johann Wolfgang von Goethe — Zur Farbenlehre (1810)
+- Michel Eugène Chevreul — De la loi du contraste simultané
+  des couleurs (1839)
+- Georges Seurat — Neo-Impressionism
+- Guillaume Apollinaire — Orphism
+
+These historical references establish the intellectual
+background for understanding Delaunay's color practice.
+
+## Principal Research Concepts
+
+- Autonomous color
+- Relational color
+- Generative principle
+- Simultaneous contrast
+- Optical perception
+- Chromatic interaction
+- Visual rhythm
+- Perceptual temporality
+- Spatial organization
+- Textile matrix
+- Modular repetition
+- Intermedial continuity
+- Digital raster
+- Algorithmic visual systems
+- Shader-based computation
+
+## Important Interpretative Distinction
+
+The research does not claim that Sonia Delaunay anticipated
+digital image generation or contemporary generative AI.
+
+The comparison between simultaneism and algorithmic systems
+is structural and conceptual, not technological or historical.
+
+The distinction between perceptual generativity and
+computational generation must be preserved.
+
+## Research Contribution
+
+The research proposes that the generative character
+of Delaunay's color practice can be understood through
+the interaction of color, geometry, perception, material
+and movement.
+
+It also examines how this relational visual logic can
+be compared critically with contemporary computational
+image-making.
+
+## Primary Source
+
+- [Official Research Website](https://delaunaycolor.us/)
+
+## Author
+
+- [Nicholas Van-Orton](https://www.nvo987.us/)
+- [ORCID Profile](https://orcid.org/0009-0007-4628-1871)
+- [Digital Identity](https://identity.nvo987.us/)
+
+## Additional Metadata
+
+- [RSS Feed](https://delaunaycolor.us/rss.xml)
+- [Atom Feed](https://delaunaycolor.us/atom.xml)
+- [XML Sitemap](https://delaunaycolor.us/sitemap.xml)
+- [FOAF Metadata](https://delaunaycolor.us/foaf.xml)
+- [AI Information](https://delaunaycolor.us/ai.txt)
+- [Copyright and License](https://delaunaycolor.us/LICENSE)
+
+## Citation
+
+Van-Orton, Nicholas.
+
+"Color as a Generative Principle in the Work of Sonia Delaunay."
+
+https://delaunaycolor.us/
+
+## Contact
+
+nvo@nvo987.us
+
+## Copyright
+
+Copyright (c) 2026 Nicholas Van-Orton.
+
+All Rights Reserved.
+
+See the LICENSE file for the applicable copyright terms.
