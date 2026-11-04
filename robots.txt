@@ -1,9 +1,4 @@
-# Robots Exclusion Protocol
-# https://delaunaycolor.us/robots.txt
-
 User-agent: *
-
 Allow: /
 
-# XML Sitemap
 Sitemap: https://delaunaycolor.us/sitemap.xml
